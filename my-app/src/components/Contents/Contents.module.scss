@@ -1,0 +1,101 @@
+.introduction {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 200px;
+  // background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.topBlur,
+.bottomBlur {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+  pointer-events: none;
+}
+
+// .topBlur {
+//   bottom: -50px;
+
+//   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+// }
+
+// .bottomBlur {
+//   top: -50px;
+//   background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+// }
+
+.title {
+  writing-mode: vertical-rl;
+  transform: translateY(20%);
+  position: absolute;
+  left: 80%;
+
+  font-size: 3.25rem; /* 36px */
+  margin-bottom: 1rem; /* 16px */
+}
+.subTitle {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 3rem; /* 16px */
+  display: block;
+}
+
+.description {
+  font-size: 1.125rem; /* 18px */
+}
+
+.memberArea {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.leadershipContent {
+  display: flex;
+  margin: 2rem;
+  width: 100%;
+}
+
+.photoContainer {
+  flex: 1;
+  max-width: 40%; /* 1:3の比率に設定 */
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 2rem; /* 写真とメッセージの間のスペース */
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+.bio {
+  margin-top: 1rem; /* 写真と経歴の間のスペース */
+}
+
+.name {
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+}
+
+.position {
+  font-size: 1rem; /* 16px */
+  margin-top: 0.5rem; /* 名前とポジションの間のスペース */
+}
+
+.career {
+  font-size: 0.875rem; /* 14px */
+  margin-top: 0.5rem; /* ポジションと経歴の間のスペース */
+}
+
+.message {
+  flex: 2;
+  font-size: 1.125rem; /* 18px */
+}
