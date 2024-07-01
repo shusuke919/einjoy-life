@@ -1,5 +1,6 @@
 import Contents from "@/components/Contents/Contents";
 import Introduction from "@/components/Introduction/Introduction";
+import MainLogo from "@/components/MainLogo/MainLogo";
 import MainVisual from "@/components/MainVisual/MainVisual";
 
 export default function Home() {
@@ -7,11 +8,7 @@ export default function Home() {
     <div className="relative">
       <MainVisual />
       <main className="relative z-10">
-        <div className="flex min-h-screen flex-col items-center justify-center p-24 text-white text-3xl">
-          <div className="w-1/3 bg-white">
-            <img src="/assets/mainLogo.png" alt="ロゴ" />
-          </div>
-        </div>
+        <MainLogo />
         <Introduction />
         <Contents />
         <section className="min-h-screen p-24 bg-gray-900 text-white">
