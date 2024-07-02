@@ -30,7 +30,7 @@ const Introduction = () => {
         <div className={styles.leadershipContent}>
           <div className={styles.photoContainer}>
             <img
-              src="/assets/leadership_picture.jpg"
+              src="/assets/leader_grayscale.jpg"
               alt="代表の写真"
               className={styles.photo}
             />
