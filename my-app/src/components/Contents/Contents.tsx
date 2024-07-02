@@ -4,24 +4,25 @@ import styles from "./Contents.module.scss";
 const Contents = () => {
   const facilities = [
     {
-      name: "八尾市店",
-      photo: "/assets/leadership_picture.jpg",
+      name: "ピースⅠ",
+      photo: "/assets/yao_1.jpg",
       message: "八尾市店の説明文がここに入ります。",
+      address:"大阪府八尾市中田1-3 友田コーポ141",
     },
     {
-      name: "大阪市店",
-      photo: "/assets/leadership_picture.jpg",
+      name: "ピースⅡ",
+      photo: "/assets/yao_1.jpg",
       message: "大阪市店の説明文がここに入ります。",
+      address:"大阪府八尾市美園3-78-1 ピアパーク美園401 402",
     },
-    // 他の施設もここに追加できます
   ];
 
   return (
     <section className={styles.introduction}>
       <div className={styles.topBlur}></div>
       <div className={styles.missionArea}>
-        <h1 className={styles.title}>施設紹介</h1>
-        <h2 className={styles.subTitle}>マンション型障がい者グループホーム</h2>
+        <h1 className={styles.title}>Facility</h1>
+        <h2 className={styles.subTitle}>マンション型<br />障がい者グループホーム</h2>
         <p className={styles.description}>
           当社が運営するマンション型障がい者グループホームは、 <br />
           障がいを持つ方々が快適に過ごせる住環境を提供するために設計されています。
@@ -42,11 +43,11 @@ const Contents = () => {
           彼らが自己実現できる場を作り続けていきます。
         </p>
       </div>
-      <div className={styles.memberArea}>
+      <div className={styles.officeArea}>
         {facilities.map((facility, index) => {
           return (
-            <div key={index} className={styles.leadershipContent}>
-              <p className={styles.message}>{facility.name}</p>
+            <div key={index} className={styles.officeContent}>
+            
               <div className={styles.photoContainer}>
                 <img
                   src={facility.photo}
@@ -54,6 +55,9 @@ const Contents = () => {
                   className={styles.photo}
                 />
               </div>
+              <p className={styles.officeName}>{facility.name}</p>
+             
+              <p className={styles.address}>{facility.address}</p>
             </div>
           );
         })}

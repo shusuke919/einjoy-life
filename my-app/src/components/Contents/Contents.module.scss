@@ -1,6 +1,7 @@
 @import "../../app/globals.scss";
 
 .introduction {
+  margin-top: 150px;
   position: relative;
   min-height: 100vh;
   padding: 100px 200px;
@@ -13,6 +14,7 @@
   // align-items: center;
   @include sp {
     padding: 50px 40px;
+    margin-top: 100px;
   }
 }
 
@@ -38,6 +40,7 @@
 
 .title {
   writing-mode: vertical-rl;
+  // text-orientation:sideways;
   transform: translateY(20%);
   position: absolute;
   left: 80%;
@@ -45,10 +48,8 @@
   font-size: 3.25rem; /* 36px */
   margin-bottom: 1rem; /* 16px */
   @include sp {
-    writing-mode: horizontal-tb;
-    transform: translateY(0);
-    left: 0;
-    position: relative;
+    transform: translateY(20%);
+
     font-size: 2rem; /* 36px */
   }
 }
@@ -60,17 +61,26 @@
 
 .description {
   font-size: 1.125rem; /* 18px */
+  @include sp {
+    font-size: 1rem; /* 16px */
+    margin-right: 30%;
+  }
 }
 
-.memberArea {
+.officeArea {
   padding: 100px 0;
   display: flex;
   flex-direction: column;
 }
 
-.leadershipContent {
+.officeContent {
   display: flex;
+  margin-bottom: 50px;
 
+  flex-direction: column;
+
+  // justify-content: center;
+  // align-items: center;
   width: 100%;
   @include sp {
     flex-direction: column;
@@ -79,13 +89,12 @@
 
 .photoContainer {
   flex: 1;
-  max-width: 25%; /* 1:3の比率に設定 */
+  max-width: 70%; /* 1:3の比率に設定 */
   display: flex;
-  flex-direction: column;
 
   margin-right: 2rem; /* 写真とメッセージの間のスペース */
   @include sp {
-    max-width: 60%;
+    max-width: 90%;
     margin-right: 0;
     margin-bottom: 2rem;
   }
@@ -115,7 +124,22 @@
   margin-top: 0.5rem; /* ポジションと経歴の間のスペース */
 }
 
-.message {
-  flex: 2;
-  font-size: 1.125rem; /* 18px */
+.officeName {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  @include sp {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+}
+
+.address {
+  font-size: 1rem;
+  margin-top: 5px;
+
+  color: gray;
+  @include sp {
+    font-size: 0.8rem;
+    margin-top: 2px;
+  }
 }
