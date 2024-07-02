@@ -1,6 +1,7 @@
 @import "../../app/globals.scss";
 
 .introduction {
+  margin-top: 150px;
   position: relative;
   min-height: 100vh;
   padding: 100px 200px;
@@ -13,6 +14,7 @@
   // align-items: center;
   @include sp {
     padding: 50px 40px;
+    margin-top: 100px;
   }
 }
 
@@ -38,6 +40,7 @@
 
 .title {
   writing-mode: vertical-rl;
+  // text-orientation:sideways;
   transform: translateY(20%);
   position: absolute;
   left: 80%;
@@ -45,9 +48,8 @@
   font-size: 3.25rem; /* 36px */
   margin-bottom: 1rem; /* 16px */
   @include sp {
-  
     transform: translateY(20%);
-  
+
     font-size: 2rem; /* 36px */
   }
 }
@@ -65,60 +67,9 @@
   }
 }
 
-.memberArea {
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-}
 
-.leadershipContent {
-  display: flex;
 
-  width: 100%;
-  @include sp {
-    flex-direction: column;
-  }
-}
-
-.photoContainer {
-  flex: 1;
-  max-width: 25%; /* 1:3の比率に設定 */
-  display: flex;
-  flex-direction: column;
-
-  margin-right: 2rem; /* 写真とメッセージの間のスペース */
-  @include sp {
-    max-width: 60%;
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-}
-
-.photo {
-  width: 100%;
-  height: auto;
-}
-
-.bio {
-  margin-top: 1rem; /* 写真と経歴の間のスペース */
-}
-
-.name {
-  font-size: 1.125rem; /* 18px */
-  font-weight: bold;
-}
-
-.position {
-  font-size: 1rem; /* 16px */
-  margin-top: 0.5rem; /* 名前とポジションの間のスペース */
-}
-
-.career {
-  font-size: 0.875rem; /* 14px */
-  margin-top: 0.5rem; /* ポジションと経歴の間のスペース */
-}
-
-.message {
-  flex: 2;
-  font-size: 1.125rem; /* 18px */
+.separator {
+  border-top: 2px solid black; /* 線のスタイル */
+  margin: 4rem 0; /* 上下のマージン */
 }
